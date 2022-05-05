@@ -11,18 +11,20 @@ function Tweet(props) {
       <ProfileImage image={props.tweet.user.image}/>
 
       <div className="body">
+
         <div className="top">
           <span className="user">
             <User userData={props.tweet.user} />
           </span>
 
           <Timestamp userData={props.tweet.timestamp} />
+        
         </div>
 
         <Message userData={props.tweet.message} />
         <Actions />
       </div>
-
+      <i class="fas fa-ellipsis-h"></i>
 
     </div>
   );
